@@ -97,7 +97,9 @@ a.card:hover h3 { text-decoration: underline; }
 .facts dd { margin: 0; }
 @media (max-width: 520px) { .facts { grid-template-columns: 1fr; gap: 2px; } .facts dd { margin-bottom: 10px; } }
 .gym-list { list-style: none; margin: 8px 0 0; padding: 0; }
-.gym-list li { display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; border-top: 1px solid #eee5d3; }
+.gym-list li { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 7px 0; border-top: 1px solid #eee5d3; }
+.gym-list li > a { display: inline-flex; align-items: center; gap: 10px; }
+.gym-icon { width: 28px; height: 28px; border-radius: 6px; flex: none; object-fit: contain; }
 .gym-list li:first-child { border-top: 0; }
 .gym-list a { font-weight: 600; }
 .gym-list .meta { color: var(--muted); font-size: .9rem; white-space: nowrap; }
